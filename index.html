@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Varshini — Vibrant Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: linear-gradient(135deg, #ffecd2, #fcb69f, #ff9a9e);
+      --card: rgba(255,255,255,0.85);
+      --accent:#ff6f91;
+      --accent2:#845ec2;
+      --shadow:0 15px 35px rgba(0,0,0,0.15);
+      font-family:'Poppins',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:#1e293b;overflow-x:hidden;animation:bgShift 15s ease-in-out infinite alternate;}
+    @keyframes bgShift{
+      0%{background:linear-gradient(135deg,#ffecd2,#fcb69f,#ff9a9e)}
+      50%{background:linear-gradient(135deg,#fcd5ce,#cdb4db,#ff9a9e)}
+      100%{background:linear-gradient(135deg,#d5f4e6,#9be7ff,#ff9a9e)}
+    }
+
+    header{position:fixed;top:0;width:100%;backdrop-filter:blur(12px);background:rgba(255,255,255,0.6);box-shadow:var(--shadow);z-index:999;display:flex;justify-content:space-between;align-items:center;padding:12px 40px}
+    .brand{font-weight:700;font-size:22px;color:var(--accent);cursor:pointer;letter-spacing:1px;}
+    nav{display:flex;gap:30px}
+    nav a{text-decoration:none;color:#1e293b;font-weight:600;transition:0.3s}
+    nav a:hover{color:var(--accent2)}
+
+    main{max-width:1100px;margin:120px auto;padding:0 20px;display:flex;flex-direction:column;gap:100px}
+
+    .hero{display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+    .hero .intro{text-flex:1;min-width:280px}
+    .hero h1{font-size:44px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent;line-height:1.1;}
+    .hero p{margin-top:12px;color:#475569;line-height:1.6;font-weight:500}
+    .hero img{width:240px;height:240px;border-radius:25px;object-fit:cover;box-shadow:0 25px 45px rgba(0,0,0,0.25);border:4px solid rgba(255,255,255,0.5);}
+    .hero .resume-btn{display:inline-block;margin-top:15px;padding:10px 20px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:white;border-radius:25px;text-decoration:none;font-weight:600;box-shadow:0 5px 15px rgba(0,0,0,0.2);transition:0.3s}
+    .hero .resume-btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,0.25);}
+
+    section{background:var(--card);backdrop-filter:blur(25px);padding:50px;border-radius:25px;box-shadow:var(--shadow);transition:transform 0.6s ease, box-shadow 0.6s ease;}
+    section:hover{transform:translateY(-12px);box-shadow:0 25px 50px rgba(0,0,0,0.15)}
+    h2{font-size:30px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent;margin-bottom:15px;text-align:center}
+    p,li{line-height:1.6;color:#333333;font-weight:500}
+
+    .skills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}
+    .skill{padding:12px 18px;border-radius:35px;background:linear-gradient(90deg,var(--accent2),var(--accent));color:white;font-weight:600;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:25px}
+    .project{padding:22px;border-radius:20px;background:rgba(255,255,255,0.95);box-shadow:0 15px 35px rgba(0,0,0,0.1);transition:transform 0.5s, box-shadow 0.5s;}
+    .project:hover{transform:scale(1.06);box-shadow:0 25px 50px rgba(0,0,0,0.2)}
+
+    footer{text-align:center;color:#333;margin:40px 0;font-size:14px}
+
+    html{scroll-behavior:smooth}
+    .floating{animation:float 6s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">B.V.S.VARSHINI</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+<a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hero floating" style="gap:30px;">
+      <img src="profile.jpg" alt="Varshini">
+      <div class="intro">
+        <h1>Hi, I'm B.V.S.Varshini</h1>
+        <p>Hi, I am B.V.S.Varshini, a curious and enthusiastic B.Tech student in Computer Science and Engineering. With a strong academic foundation and interest in Artificial Intelligence and Machine Learning, I love exploring technology and finding creative ways to solve problems. I believe in learning by doing, staying open to new challenges, and constantly growing both personally and professionally.</p>
+        <a class="resume-btn" href="B.V.S.VARSHINI_RESUME.pdf" target="_blank">View Resume</a>
+      </div>
+    </section>
+
+    <section id="experience" class="floating">
+      <h2>Experience</h2>
+      <ul>
+        <li> International Institute of Information Technology Bangalore(IIITB) —  Research
+ Intern</li>
+        <li> Aeronautical Development Agency —  Summer Trainee</li>
+        <li> AI/ML Head IEEE Society, Mohan Babu University — Actively involved in tech events and problem-solving initiatives.</li>
+      </ul>
+    </section>
+
+    <section id="education" class="floating">
+      <h2>Education</h2>
+      <ul>
+        <li>B.Tech — Mohan Babu University,  B.Tech in Computer Science and Engineering (AI & ML)</li>
+        <li> Higher Secondary Education — Narayana Junior College, Maths Physics and Chemistry</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="floating">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3> Tomato Leaf Disease Detection using Generative Adversarial Networks</h3>
+          <p> 
+• Developed a tomato leaf disease detection system using DCGAN with integration of CNN<br>
+• Technologies Used: Python,CNN, DCGAN, Transfer Learning , TensorFlow, Keras, Matplotlib, Seaborn, Numpy
+</p>
+        </div>
+        <div class="project">
+          <h3>Spam Mail Detection using Natural Language Processing</h3>
+          <p>
+• Implemented NLP-based spam detection using Python libraries for efficient text preprocessing and analysis.<br>
+• Technologies Used: Python, Pandas, Matplotlib, NLTK, Seaborn, WordCloud, Scikit-learn.
+</p>
+        </div>
+        <div class="project">
+          <h3> User Authentication Website using Flask and SQL database</h3>
+          <p> • Built a website using Flask and SQLite, with secure user authentication, form validation, and password hashing<br>
+ • Technologies Used : Flask, SQLite, HTML, CSS, Python</p>
+        </div>
+<div class="project">
+          <h3>3D Player Controller with Physics and Animation</h3>
+          <p> • Designed a 3D player controller with movement, jumping, and physics-based object interactions using raycasting and Unity’s Rigidbody system<br>
+ • Technologies Used : Unity3D, C#, Rigidbody Physics, Raycasting, Input System, Animator Controller
+</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="floating">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Communication</div>
+	<div class="skill">Problem Solving</div>
+	<div class="skill">Crititcal Thinking</div>
+	<div class="skill">Creative Writing</div>
+	<div class="skill">Leadership</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Deep Learning</div>
+      </div>
+    </section>
+
+    <section id="contact" class="floating">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Email:</strong><a href="bvsvarshini@gmail.com"> bvsvarshini@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/b-v-s-varshini-877964308/" target="_blank"> https://www.linkedin.com/in/b-v-s-varshini-877964308/</a></li>
+        <li><strong>GitHub:</strong><a href=" https://github.com/bvsvarshini" target="_blank"> https://github.com/bvsvarshini</a></li>
+	<li><strong>Contact me:</strong> 7676181227</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Varshini. Built with ❤️.</footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
