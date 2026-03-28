@@ -23,7 +23,7 @@ This is a fully responsive **personal portfolio website** built using **HTML and
 
 ---
 
-## 🗂️ Project Structure
+```## 🗂️ Project Structure
 Portfolio-Website/
 ├── index.html # Main website file
 ├── profile.jpg # Profile image
