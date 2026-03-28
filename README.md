@@ -65,16 +65,6 @@ Portfolio-Website/
 - **Styling:** Custom CSS (animations, gradients, flexbox, grid)  
 - **Fonts:** Google Fonts (Poppins)  
 
----
-
-## 💼 Featured Projects
-
-- 🍅 Tomato Leaf Disease Detection (GAN + CNN)  
-- 📧 Spam Mail Detection (NLP)  
-- 🔐 User Authentication Website (Flask + SQLite)  
-- 🎮 3D Player Controller (Unity + C#)  
-
----
 
 ## 📌 Key Highlights
 - Clean and modern UI design  
